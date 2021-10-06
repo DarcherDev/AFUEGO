@@ -2,3 +2,16 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+footer{
+    background: black;
+    min-height: 30%;
+}
+footer p {
+    color:white;
+    text-align: center;
+}
+#iconos{
+    font-size: 26px;
+    padding: 0 8px;
+    color: white;
+}

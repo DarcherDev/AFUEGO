@@ -13,7 +13,8 @@ import { RouterModule } from '@angular/router';
   declarations: [
     FooterComponent,
     NavComponent,
-    SiderbarComponent
+    SiderbarComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
