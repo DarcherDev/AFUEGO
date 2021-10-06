@@ -5,6 +5,7 @@ import { NavComponent } from './nav/nav.component';
 import { SiderbarComponent } from './siderbar/siderbar.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MateriaModule } from '../materia/materia.module';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -17,7 +18,8 @@ import { MateriaModule } from '../materia/materia.module';
   imports: [
     CommonModule,
     FlexLayoutModule,
-    MateriaModule
+    MateriaModule,
+    RouterModule
   ],
   exports:[
     FooterComponent,

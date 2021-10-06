@@ -1,6 +1,7 @@
-<mat-drawer-container class="example-container" autosize>
-    <p>nav works!</p>
-    <button mat-raised-button color="primary">Primary</button>
+<nav mat-tab-nav-bar backgroundColor="primary" color="warn">
+    <a mat-tab-link [routerLink]="['home']" (click)="activeLink = 'Inicio'" [active]="activeLink == 'A'"> Inicio</a>
+    <a mat-tab-link [routerLink]="['carrito']" (click)="activeLink = 'Carrito'" [active]="activeLink == 'B'">Carrito</a>
+    <a mat-tab-link [routerLink]="['producto']" (click)="activeLink = 'Producto'" [active]="activeLink == 'C'">Producto</a>
+</nav> 
+<router-outlet></router-outlet>
 
-
-</mat-drawer-container>

@@ -12,5 +12,8 @@ export class NavComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  links = ['#100', '#101', '#102'];
+  titles = ['home','carrito', 'roducto'];
+  activeLink = this.links[1];
+  myColor = 'primary';
 }
