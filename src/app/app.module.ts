@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './router/app-routing.module';
 
 import { AppComponent } from './app.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { PaginaModule } from './pagina/pagina.module';
 import { SharedModule } from './shared/shared.module';
 
@@ -18,6 +19,7 @@ import { SharedModule } from './shared/shared.module';
     BrowserAnimationsModule,
     PaginaModule,
     SharedModule,
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
