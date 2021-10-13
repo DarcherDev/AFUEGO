@@ -1,0 +1,126 @@
+{  
+    "usuarios": [
+        {
+        "id": "1",
+        "usuario": "archer",
+        "email": "daniel@outlook.com",
+        "password":"20425"
+        }
+    ],
+    "prendas":[
+        {
+            "id": "1",
+            "nombre":"",
+            "descripcion":"",
+            "precion":""
+        },
+        {
+            "id": "2",
+            "nombre":"",
+            "descripcion":"",
+            "precion":""
+        },
+        {
+            "id": "3",
+            "nombre":"",
+            "descripcion":"",
+            "precion":""
+        },
+        {
+            "id": "4",
+            "nombre":"",
+            "descripcion":"",
+            "precion":""
+        },
+        {
+            "id": "5",
+            "nombre":"",
+            "descripcion":"",
+            "precion":""
+        },
+        {
+            "id": "6",
+            "nombre":"",
+            "descripcion":"",
+            "precion":""
+        },
+        {
+            "id": "7",
+            "nombre":"",
+            "descripcion":"",
+            "precion":""
+        },
+        {
+            "id": "8",
+            "nombre":"",
+            "descripcion":"",
+            "precion":""
+        },
+        {
+            "id": "9",
+            "nombre":"",
+            "descripcion":"",
+            "precion":""
+        },
+        {
+            "id": "10",
+            "nombre":"",
+            "descripcion":"",
+            "precion":""
+        },
+        {
+            "id": "11",
+            "nombre":"",
+            "descripcion":"",
+            "precion":""
+        },
+        {
+            "id": "12",
+            "nombre":"",
+            "descripcion":"",
+            "precion":""
+        },
+        {
+            "id": "13",
+            "nombre":"",
+            "descripcion":"",
+            "precion":""
+        }
+    ],
+    "clientes":[
+        {
+            "id": "1",
+            "nombres":"daniel",
+            "apellidos":"aristizabal bedoya",
+            "cedula":"1143871998",
+            "celular":"3153239411",
+            "telefono":"5141866",
+            "direccion":"cr32a#9b-48",
+            "departamento":"valle del cauca",
+            "ciudad":"cali",
+            "pedido":[
+                {
+                    "prenda":"",
+                    "cantidad":"",
+                    "total":""
+                }
+            ]
+        },
+        {
+            "id": "",
+            "nombre":"",
+            "cedula":"",
+            "telefono":"",
+            "direccion":"",
+            "departamento":"",
+            "ciudad":"",
+            "pedido":[
+                {
+                    "prenda":"",
+                    "cantidad":"",
+                    "total":""
+                }
+            ]
+        }
+    ]
+}
