@@ -8,7 +8,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Data Base Serve json
 
-installa Data Base serve `npm install -g json-server`. and run Data Base `json-server --watch serve.json`
+installa Data Base serve `npm install -g json-server`. and run Data Base `json-server --watch db.json`
 
 ## Code scaffolding
 
