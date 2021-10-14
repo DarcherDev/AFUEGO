@@ -17,27 +17,27 @@ export class PrendaService {
     this.http = http;
   }
   getPrenda(): Observable<Prenda[]>{
-    return this.http.get<Prenda[]>(`${this.url}/prenda`);    
+    return this.http.get<Prenda[]>(`${this.url}/prendas`);    
   }
 
     // peticon get para obtener
     getPrendaPorId(id:string): Observable<Prenda>{    
-      return this.http.get<Prenda>(`${this.url}/prenda/${ id }`);
+      return this.http.get<Prenda>(`${this.url}/prendas/${ id }`);
     }
   
     // peticon post para crear
     agregarPrenda(prenda: Prenda): Observable<Prenda>{
-      return this.http.post<Prenda>(`${this.url}/prenda`, prenda);
+      return this.http.post<Prenda>(`${this.url}/prendas`, prenda);
     }
   
     // peticon put para actualizar  
     editarPrenda(prenda: Prenda): Observable<Prenda>{
-      return this.http.put<Prenda>(`${this.url}/prenda/${prenda.id}`, prenda);
+      return this.http.put<Prenda>(`${this.url}/prendas/${prenda.id}`, prenda);
     }
   
     // peticon delete para eliminar   
     BorrarPrenda(id: string): Observable<any>{
-      return this.http.delete<any>(`${this.url}/prenda/${id}`);
+      return this.http.delete<any>(`${this.url}/prendas/${id}`);
     }
 
 }
