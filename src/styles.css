@@ -2,8 +2,11 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+nav{
+    background-color:#185ADB;
+}
 footer{
-    background: black;
+    background:#0A1931;
     min-height: 200px;
 }
 .conteiner{
