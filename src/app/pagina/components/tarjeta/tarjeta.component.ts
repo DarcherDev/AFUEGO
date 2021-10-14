@@ -4,8 +4,11 @@ import { Prenda } from '../../interfaces/prenda.interface';
 @Component({
   selector: 'app-tarjeta',
   templateUrl: './tarjeta.component.html',
-  styles: [
-  ]
+  styles: [`
+    mat-card{
+      margin-top: 20px;
+    }
+  `]
 })
 export class TarjetaComponent {
 

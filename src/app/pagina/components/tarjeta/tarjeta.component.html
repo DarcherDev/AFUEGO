@@ -1,16 +1,14 @@
 <mat-card >
     <mat-card-header>
         <mat-card-title> {{prenda.nombre}} </mat-card-title>
-        <mat-card-subtitle> {{prenda.precio}} </mat-card-subtitle>
     </mat-card-header>
 
     <!-- <img mat-card-image [src]="prenda"> -->
     <img mat-card-image [src]="prenda | imagen">
 
     <mat-card-content>
-        <h3>{{prenda}}</h3>
         <p>
-            <strong>Nombre</strong> {{ prenda }}
+            <strong>Precio</strong> {{ prenda.precio }}
             <br>
             <strong>Descripcion: </strong> {{ prenda.descripcion}}
         </p>
