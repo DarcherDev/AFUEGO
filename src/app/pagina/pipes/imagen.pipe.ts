@@ -12,11 +12,11 @@ export class ImagenPipe implements PipeTransform {
   transform(prenda:Prenda): string {
 
     if((!prenda.id && !prenda.alt_img ) || prenda.alt_img ===''){
-      this.img='assets/no-image.png';
+      this.img='assets/blusas/no-image.png';
     }else if(prenda.alt_img){
       this.img = prenda.alt_img;
     }else{
-      this.img=`assets/heroes/${prenda.id}.jpg`;
+      this.img=`assets/blusas/${prenda.id}.jpg`;
     }  
     return this.img;
   }

@@ -3,7 +3,6 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 import { environment } from 'src/environments/environment';
-import { Cliente } from '../interfaces/cliente.interface';
 import { Prenda } from '../interfaces/prenda.interface';
 
 @Injectable({
