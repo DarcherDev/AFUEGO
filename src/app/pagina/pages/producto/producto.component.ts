@@ -1,16 +1,22 @@
 import { Component, OnInit } from '@angular/core';
+import { Prenda } from '../../interfaces/prenda.interface';
+import { PrendaService } from '../../services/prenda.service';
 
 @Component({
   selector: 'app-producto',
   templateUrl: './producto.component.html',
-  styles: [
-  ]
+  styles: []
 })
 export class ProductoComponent implements OnInit {
 
-  constructor() { }
+  prendas: Prenda[] = [];
+  private prendaService: PrendaService;
 
-  ngOnInit(): void {
+  constructor(PrendaService: PrendaService) {
+    this.prendaService = PrendaService;
   }
 
+  ngOnInit(): void {
+    this.prendaService.getPrenda().subscribe(prendas => this.prendas = prendas);
+  }
 }

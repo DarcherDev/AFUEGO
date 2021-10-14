@@ -2,9 +2,15 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+nav{
+    background-color:#185ADB;
+}
 footer{
-    background: black;
-    min-height: 30%;
+    background:#0A1931;
+    min-height: 200px;
+}
+.conteiner{
+    min-height: calc(100vh - 200px );
 }
 footer p {
     color:white;

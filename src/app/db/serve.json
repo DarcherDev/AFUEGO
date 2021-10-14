@@ -1,164 +1,164 @@
 {
-	"usuarios": [
-		{
-		  "id": "1",
-		  "usuario": "archer",
-		  "email": "daniel@outlook.com",
-		  "password": "20425"
-		}
-	],
-	"prendas": [
-		{
-		  "id": "1",
-		  "nombre": "crop top blanco arco iris",
-		  "descripcion": "crop topp blanco con franja de arco iris",
-		  "precion": 28000
-		},
-		{
-		  "id": "2",
-		  "nombre": "crop top mariposa",
-		  "descripcion": "crop top azul celeste con estapado mariposa",
-		  "precion": 28000
-		},
-		{
-		  "id": "3",
-		  "nombre": "crop top franja blanca",
-		  "descripcion": "crop top gris con franjas blancas en las mangas",
-		  "precion": 28000
-		},
-		{
-		  "id": "4",
-		  "nombre": "crop top flores",
-		  "descripcion": "crop top verde con estampado de flores",
-		  "precion": 28000
-		},
-		{
-		  "id": "5",
-		  "nombre": "crop top frajan negra",
-		  "descripcion": "crop top blanco con franjas negras en las mangas",
-		  "precion": 28000
-		},
-		{
-		  "id": "6",
-		  "nombre": "crop topp flor",
-		  "descripcion": "crop top blanco cons tejida flor",
-		  "precion": 28000
-		},
-		{
-		  "id": "7",
-		  "nombre": "",
-		  "descripcion": "crop top blanco con estampado recuadro flores azules",
-		  "precion": 28000
-		},
-		{
-		  "id": "8",
-		  "nombre": "crop top negro aro iris",
-		  "descripcion": "crop top negro manga larga con estampado de arco iris",
-		  "precion": 28000
-		},
-		{
-		  "id": "9",
-		  "nombre": "abano",
-		  "descripcion": "camisa blanca estampado de abano",
-		  "precion": 35000
-		},
-		{
-		  "id": "10",
-		  "nombre": "crop top honey",
-		  "descripcion": "crop top rojo con estampado honey",
-		  "precion": 28000
-		},
-		{
-		  "id": "11",
-		  "nombre": "crop top rosa",
-		  "descripcion": "crop top blanco con estampado de rosa",
-		  "precion": 28000
-		},
-		{
-		  "id": "12",
-		  "nombre": "crop top captus",
-		  "descripcion": "crop top con estampado de captus",
-		  "precion": 28000
-		},
-		{
-		  "id": "13",
-		  "nombre": "crop top goob vibes",
-		  "descripcion": "crop top negro good vibes con estampado mano calabera",
-		  "precion": 28000
-		}
-	],
-	"clientes": [
-		{
-		 "id": "1",
-		 "nombres": "daniel",
-		 "apellidos": "aristizabal bedoya",
-		 "documentoIdentidad": "1143871998",
-		 "correo": "daniel_aristizabal@outlook.com",
-		 "celular": "3153239411",
-		 "telefono": "5141866",
-		 "direccion": "carrera 32a #9b-48",
-		 "departamentop": "valle del cauca",
-		 "ciudad": "cali",
-		 "pedido": [
-			{
-			"prenda": 10,
-			"cantidad": 1,
-			"total": 28000,
-			"estado": "pagado"
-			}
-		 ]
-		},
-		{
-		  "id": "2",
-		  "nombres": "salome",
-		  "apellidos": "araujo sanches",
-		  "documentoIdentidad": "1010095795",
-		  "correo": "",
-		  "celular": "3175450659",
-		  "telefono": "3710938",
-		  "direccion": "Calle 62AN #2N-68",
-		  "departamentop": "valle del cauca",
-		  "ciudad": "cali",
-		  "pedido": [
-				{
-                    "prenda":9,
-                    "cantidad":2,
-                    "total":70000,
-                    "estado":"entregado"
-                },
-                {
-                    "prenda":13,
-                    "cantidad":1,
-                    "total":28000,
-                    "estado":"entregado"
-                },
-                {
-                    "prenda":7,
-                    "cantidad":2,
-                    "total":56000,
-                    "estado":"entregado"
-                }
-		  ]
-		},
-		{
-		  "id": "3",
-		  "nombres": "Cristhian",
-		  "apellidos": "garzon alzate",
-		  "documentoIdentidad": "1.118.309.397",
-		  "correo": "Cristhian.garzon@correounivalle.edu.co",
-		  "celular": "3167326901",
-		  "telefono": "",
-		  "direccion": "Cra 3N #14-47",
-		  "departamentop": "valle del cauca",
-		  "ciudad": "yumbo",
-		  "pedido": [
-				{
-				  "prenda": 11,
-				  "cantidad": 1,
-				  "total": 28000,
-				  "estado": "enviado"
-				}
-		    ]
-		}
-	]
+  "usuarios": [
+    {
+      "id": "1",
+      "usuario": "archer",
+      "email": "daniel@outlook.com",
+      "password": "20425"
+    }
+  ],
+  "prendas": [
+    {
+      "id": "1",
+      "nombre": "crop top blanco arco iris",
+      "descripcion": "crop topp blanco con franja de arco iris",
+      "precion": 28000
+    },
+    {
+      "id": "2",
+      "nombre": "crop top mariposa",
+      "descripcion": "crop top azul celeste con estapado mariposa",
+      "precion": 28000
+    },
+    {
+      "id": "3",
+      "nombre": "crop top franja blanca",
+      "descripcion": "crop top gris con franjas blancas en las mangas",
+      "precion": 28000
+    },
+    {
+      "id": "4",
+      "nombre": "crop top flores",
+      "descripcion": "crop top verde con estampado de flores",
+      "precion": 28000
+    },
+    {
+      "id": "5",
+      "nombre": "crop top frajan negra",
+      "descripcion": "crop top blanco con franjas negras en las mangas",
+      "precion": 28000
+    },
+    {
+      "id": "6",
+      "nombre": "crop topp flor",
+      "descripcion": "crop top blanco cons tejida flor",
+      "precion": 28000
+    },
+    {
+      "id": "7",
+      "nombre": "",
+      "descripcion": "crop top blanco con estampado recuadro flores azules",
+      "precion": 28000
+    },
+    {
+      "id": "8",
+      "nombre": "crop top negro aro iris",
+      "descripcion": "crop top negro manga larga con estampado de arco iris",
+      "precion": 28000
+    },
+    {
+      "id": "9",
+      "nombre": "abano",
+      "descripcion": "camisa blanca estampado de abano",
+      "precion": 35000
+    },
+    {
+      "id": "10",
+      "nombre": "crop top honey",
+      "descripcion": "crop top rojo con estampado honey",
+      "precion": 28000
+    },
+    {
+      "id": "11",
+      "nombre": "crop top rosa",
+      "descripcion": "crop top blanco con estampado de rosa",
+      "precion": 28000
+    },
+    {
+      "id": "12",
+      "nombre": "crop top captus",
+      "descripcion": "crop top con estampado de captus",
+      "precion": 28000
+    },
+    {
+      "id": "13",
+      "nombre": "crop top goob vibes",
+      "descripcion": "crop top negro good vibes con estampado mano calabera",
+      "precion": 28000
+    }
+  ],
+  "clientes": [
+    {
+      "id": "1",
+      "nombres": "daniel",
+      "apellidos": "aristizabal bedoya",
+      "documentoIdentidad": "1143871998",
+      "correo": "daniel_aristizabal@outlook.com",
+      "celular": "3153239411",
+      "telefono": "5141866",
+      "direccion": "carrera 32a #9b-48",
+      "departamentop": "valle del cauca",
+      "ciudad": "cali",
+      "pedido": [
+        {
+          "prenda": 10,
+          "cantidad": 1,
+          "total": 28000,
+          "estado": "pagado"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "nombres": "salome",
+      "apellidos": "araujo sanches",
+      "documentoIdentidad": "1010095795",
+      "correo": "",
+      "celular": "3175450659",
+      "telefono": "3710938",
+      "direccion": "Calle 62AN #2N-68",
+      "departamentop": "valle del cauca",
+      "ciudad": "cali",
+      "pedido": [
+        {
+          "prenda": 9,
+          "cantidad": 2,
+          "total": 70000,
+          "estado": "entregado"
+        },
+        {
+          "prenda": 13,
+          "cantidad": 1,
+          "total": 28000,
+          "estado": "entregado"
+        },
+        {
+          "prenda": 7,
+          "cantidad": 2,
+          "total": 56000,
+          "estado": "entregado"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "nombres": "Cristhian",
+      "apellidos": "garzon alzate",
+      "documentoIdentidad": "1.118.309.397",
+      "correo": "Cristhian.garzon@correounivalle.edu.co",
+      "celular": "3167326901",
+      "telefono": "",
+      "direccion": "Cra 3N #14-47",
+      "departamentop": "valle del cauca",
+      "ciudad": "yumbo",
+      "pedido": [
+        {
+          "prenda": 11,
+          "cantidad": 1,
+          "total": 28000,
+          "estado": "enviado"
+        }
+      ]
+    }
+  ]
 }

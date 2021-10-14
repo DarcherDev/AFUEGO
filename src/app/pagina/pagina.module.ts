@@ -1,11 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormsModule } from '@angular/forms';
+
+
+import { RouterModule } from '@angular/router';
+import { MaterialModule } from '../material/materia.module';
 
 import { CarritoComponent } from './pages/carrito/carrito.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductoComponent } from './pages/producto/producto.component';
-import { MateriaModule } from '../materia/materia.module';
-import { RouterModule } from '@angular/router';
+import { TarjetaComponent } from './components/tarjeta/tarjeta.component';
+import { ImagenPipe } from './pipes/imagen.pipe';
+import { CarritoProductoComponent } from './components/carrito-producto/carrito-producto.component';
 
 
 
@@ -13,11 +20,16 @@ import { RouterModule } from '@angular/router';
   declarations: [
     CarritoComponent,
     HomeComponent,
-    ProductoComponent
+    ProductoComponent,
+    TarjetaComponent,
+    ImagenPipe,
+    CarritoProductoComponent
   ],
   imports: [
     CommonModule,
-    MateriaModule,
+    FlexLayoutModule,
+    MaterialModule,
+    FormsModule,
     RouterModule
   ]
 })
