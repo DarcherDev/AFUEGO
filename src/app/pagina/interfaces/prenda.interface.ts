@@ -3,4 +3,5 @@ export interface Prenda {
     nombre: string;
     descripcion: string;
     precio: number;
+    alt_img?: string;
 }
