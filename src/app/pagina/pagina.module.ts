@@ -8,6 +8,7 @@ import { MaterialModule } from '../material/materia.module';
 import { RouterModule } from '@angular/router';
 import { TarjetaComponent } from './components/tarjeta/tarjeta.component';
 import { ImagenPipe } from './pipes/imagen.pipe';
+import { CarritoProductoComponent } from './components/carrito-producto/carrito-producto.component';
 
 
 
@@ -17,7 +18,8 @@ import { ImagenPipe } from './pipes/imagen.pipe';
     HomeComponent,
     ProductoComponent,
     TarjetaComponent,
-    ImagenPipe
+    ImagenPipe,
+    CarritoProductoComponent
   ],
   imports: [
     CommonModule,
