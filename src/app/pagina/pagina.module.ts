@@ -12,6 +12,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProductoComponent } from './pages/producto/producto.component';
 import { TarjetaComponent } from './components/tarjeta/tarjeta.component';
 import { ImagenPipe } from './pipes/imagen.pipe';
+import { CarritoProductoComponent } from './components/carrito-producto/carrito-producto.component';
 
 
 
@@ -21,7 +22,8 @@ import { ImagenPipe } from './pipes/imagen.pipe';
     HomeComponent,
     ProductoComponent,
     TarjetaComponent,
-    ImagenPipe
+    ImagenPipe,
+    CarritoProductoComponent
   ],
   imports: [
     CommonModule,
