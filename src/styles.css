@@ -3,6 +3,7 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 nav{
+    padding: 5px;
     background-color:#185ADB;
 }
 footer{
@@ -13,6 +14,7 @@ footer{
     min-height: calc(100vh - 200px );
 }
 footer p {
+    
     color:white;
     text-align: center;
 }
@@ -20,4 +22,8 @@ footer p {
     font-size: 26px;
     padding: 0 8px;
     color: white;
+    text-align: center;
+}
+footer a {
+    margin: 10px;
 }
