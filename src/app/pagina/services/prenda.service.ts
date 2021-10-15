@@ -22,7 +22,7 @@ export class PrendaService {
 
     // peticon get para obtener
     getPrendaPorId(id:string): Observable<Prenda>{    
-      return this.http.get<Prenda>(`${this.url}/prendas/${ id }`);
+      return this.http.get<Prenda>(`${this.url}/detallep/${ id }`);
     }
   
     // peticon post para crear
