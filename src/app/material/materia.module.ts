@@ -1,10 +1,15 @@
 import { NgModule } from '@angular/core';
 
 import {MatButtonModule} from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card';
+import {MatCardModule } from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {FormsModule } from '@angular/forms';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatInputModule} from '@angular/material/input'
 import {MatIconModule} from '@angular/material/icon';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {TextFieldModule} from '@angular/cdk/text-field';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
@@ -17,7 +22,6 @@ import {MatDialogModule} from '@angular/material/dialog';
 
 
 
-
 @NgModule({
   exports:[
     MatButtonModule,
@@ -25,6 +29,9 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatDividerModule,
     MatGridListModule,
     MatIconModule,
+    MatInputModule,
+    MatSidenavModule,
+    TextFieldModule,
     MatTabsModule,
     MatToolbarModule,
     MatProgressSpinnerModule,
@@ -32,6 +39,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatInputModule,
     MatSnackBarModule,
     MatDialogModule,
+    FormsModule,
   ]
 })
 export class MaterialModule { }
