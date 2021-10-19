@@ -12,79 +12,79 @@
       "id": "1",
       "nombre": "crop top blanco arco iris",
       "descripcion": "crop topp blanco con franja de arco iris",
-      "precion": 28000
+      "precio": 28000
     },
     {
       "id": "2",
       "nombre": "crop top mariposa",
       "descripcion": "crop top azul celeste con estapado mariposa",
-      "precion": 28000
+      "precio": 28000
     },
     {
       "id": "3",
       "nombre": "crop top franja blanca",
       "descripcion": "crop top gris con franjas blancas en las mangas",
-      "precion": 28000
+      "precio": 28000
     },
     {
       "id": "4",
       "nombre": "crop top flores",
       "descripcion": "crop top verde con estampado de flores",
-      "precion": 28000
+      "precio": 28000
     },
     {
       "id": "5",
       "nombre": "crop top frajan negra",
       "descripcion": "crop top blanco con franjas negras en las mangas",
-      "precion": 28000
+      "precio": 28000
     },
     {
       "id": "6",
       "nombre": "crop topp flor",
       "descripcion": "crop top blanco cons tejida flor",
-      "precion": 28000
+      "precio": 28000
     },
     {
       "id": "7",
       "nombre": "",
       "descripcion": "crop top blanco con estampado recuadro flores azules",
-      "precion": 28000
+      "precio": 28000
     },
     {
       "id": "8",
       "nombre": "crop top negro aro iris",
       "descripcion": "crop top negro manga larga con estampado de arco iris",
-      "precion": 28000
+      "precio": 28000
     },
     {
       "id": "9",
       "nombre": "abano",
       "descripcion": "camisa blanca estampado de abano",
-      "precion": 35000
+      "precio": 35000
     },
     {
       "id": "10",
       "nombre": "crop top honey",
       "descripcion": "crop top rojo con estampado honey",
-      "precion": 28000
+      "precio": 28000
     },
     {
       "id": "11",
       "nombre": "crop top rosa",
       "descripcion": "crop top blanco con estampado de rosa",
-      "precion": 28000
+      "precio": 28000
     },
     {
       "id": "12",
       "nombre": "crop top captus",
       "descripcion": "crop top con estampado de captus",
-      "precion": 28000
+      "precio": 28000
     },
     {
       "id": "13",
       "nombre": "crop top goob vibes",
       "descripcion": "crop top negro good vibes con estampado mano calabera",
-      "precion": 28000
+      "precio": 28000
     }
   ],
   "clientes": [
