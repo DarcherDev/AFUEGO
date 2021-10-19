@@ -1,0 +1,30 @@
+<div fxLayout="column" fxLayoutAlign="space-evenly center">
+  <br />
+  <h1>Iniciar Sesion</h1>
+  <br />
+  <div fxLayout="column" fxLayoutAlign="space-around start" >
+    <mat-form-field appearance="outline">
+      <mat-label>Ingrese su correo</mat-label>
+      <input matInput placeholder="Correo" />
+    </mat-form-field>
+
+    <mat-form-field class="r" appearance="outline">
+      <mat-label>password</mat-label>
+      <input matInput [type]="hide ? 'password' : 'text'" />
+      <button
+        mat-icon-button
+        matSuffix
+        (click)="hide = !hide"
+        [attr.aria-label]="'Hide password'"
+        [attr.aria-pressed]="hide"
+      >
+        <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+      </button>
+    </mat-form-field>
+  </div>
+  <button class="boton" mat-raised-button>Entrar</button>
+  <br />
+  <br />
+  <a href="#">¿Olvido su contraseña?</a>
+  <a href="#">Registrarse</a>
+</div>
