@@ -6,6 +6,8 @@ import { ProductoComponent } from '../pagina/pages/producto/producto.component';
 import { DetalleProductoComponent } from '../pagina/pages/detalle-producto/detalle-producto.component';
 import { InicioSesionComponent } from '../pagina/pages/inicio-sesion/inicio-sesion.component';
 import { RegistroUsuarioComponent } from '../pagina/pages/registro-usuario/registro-usuario.component';
+import { AgregarComponent } from '../pagina/pages/agregar/agregar.component';
+
 
 const routes: Routes = [
   {
@@ -31,6 +33,14 @@ const routes: Routes = [
   {
     path:'registro',
     component: RegistroUsuarioComponent,
+
+    path:'editar',
+    component: AgregarComponent,
+  },
+  {
+    path:'editar/:id',
+    component: AgregarComponent,
+
   },
   {
     path:'**',

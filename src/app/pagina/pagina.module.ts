@@ -16,6 +16,9 @@ import { CarritoProductoComponent } from './components/carrito-producto/carrito-
 import { DetalleProductoComponent } from './pages/detalle-producto/detalle-producto.component';
 import { InicioSesionComponent } from './pages/inicio-sesion/inicio-sesion.component';
 import { RegistroUsuarioComponent } from './pages/registro-usuario/registro-usuario.component';
+import { AgregarComponent } from './pages/agregar/agregar.component';
+import { ConfirmarComponent } from './components/confirmar/confirmar.component';
+
 
 
 
@@ -29,7 +32,10 @@ import { RegistroUsuarioComponent } from './pages/registro-usuario/registro-usua
     CarritoProductoComponent,
     DetalleProductoComponent,
     InicioSesionComponent,
-    RegistroUsuarioComponent
+    RegistroUsuarioComponent,
+    AgregarComponent,
+    ConfirmarComponent
+
   ],
   imports: [
     CommonModule,

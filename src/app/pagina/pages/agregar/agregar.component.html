@@ -1,0 +1,57 @@
+<h1>
+    {{(prenda.id)? 'Editar':'Nuevo'}}
+    prenda 
+    <small>
+        {{prenda.nombre}}
+    </small>
+</h1>
+
+<div fxLayout="row" fxLayoutGap="40px" fxLayout.xs="column">
+
+    <div fxFlex="50" fxLayout="column">
+
+        <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="50px">
+
+            <mat-form-field>
+                <mat-label> Nombre Prenda </mat-label>
+                <input matInput type="text" [(ngModel)]="prenda.nombre" required>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label> Precio </mat-label>
+                <input matInput type="text" [(ngModel)]="prenda.precio" required>
+            </mat-form-field>
+
+        </div>
+
+        <mat-form-field>
+            <mat-label> descripcion </mat-label>
+            <input matInput type="text" [(ngModel)]="prenda.descripcion"required>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Foto url</mat-label>
+            <input matInput type="url" [(ngModel)]="prenda.alt_img" required>
+        </mat-form-field>
+
+        <br>
+        
+        <div fxLayout="row" fxLayoutGap="10px" fxLayout.xs="column">
+            <button mat-raised-button color="warn" (click)="guardar()">
+                <mat-icon>add</mat-icon>
+                {{(prenda.id)? 'Actualizar':'Guardar'}}
+            </button>
+
+            <span class="spacer"></span>
+
+            <button *ngIf="prenda.id" mat-raised-button color="warn" (click)="eliminar()">
+                <mat-icon>delete</mat-icon>
+                Borrar
+            </button>
+        </div>
+
+    </div>    
+    <div fxFlex="50">
+        <img [src]="prenda  | imagen">
+    </div>    
+</div>
