@@ -14,6 +14,8 @@ import { TarjetaComponent } from './components/tarjeta/tarjeta.component';
 import { ImagenPipe } from './pipes/imagen.pipe';
 import { CarritoProductoComponent } from './components/carrito-producto/carrito-producto.component';
 import { DetalleProductoComponent } from './pages/detalle-producto/detalle-producto.component';
+import { AgregarComponent } from './pages/agregar/agregar.component';
+import { ConfirmarComponent } from './components/confirmar/confirmar.component';
 
 
 
@@ -25,7 +27,9 @@ import { DetalleProductoComponent } from './pages/detalle-producto/detalle-produ
     TarjetaComponent,
     ImagenPipe,
     CarritoProductoComponent,
-    DetalleProductoComponent
+    DetalleProductoComponent,
+    AgregarComponent,
+    ConfirmarComponent
   ],
   imports: [
     CommonModule,

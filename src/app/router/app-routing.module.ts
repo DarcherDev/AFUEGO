@@ -4,6 +4,7 @@ import { HomeComponent } from '../pagina/pages/home/home.component';
 import { CarritoComponent } from '../pagina/pages/carrito/carrito.component';
 import { ProductoComponent } from '../pagina/pages/producto/producto.component';
 import { DetalleProductoComponent } from '../pagina/pages/detalle-producto/detalle-producto.component';
+import { AgregarComponent } from '../pagina/pages/agregar/agregar.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,14 @@ const routes: Routes = [
   {
     path:'detallep',
     component: DetalleProductoComponent,
+  },
+  {
+    path:'editar',
+    component: AgregarComponent,
+  },
+  {
+    path:'editar/:id',
+    component: AgregarComponent,
   },
   {
     path:'**',
