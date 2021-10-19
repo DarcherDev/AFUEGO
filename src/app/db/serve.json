@@ -95,8 +95,8 @@
       "documentoIdentidad": "1143871998",
       "correo": "daniel_aristizabal@outlook.com",
       "celular": "3153239411",
-      "telefono": "5141866",
       "direccion": "carrera 32a #9b-48",
+      "contraseña":"",
       "departamentop": "valle del cauca",
       "ciudad": "cali",
       "pedido": [
@@ -115,8 +115,8 @@
       "documentoIdentidad": "1010095795",
       "correo": "",
       "celular": "3175450659",
-      "telefono": "3710938",
       "direccion": "Calle 62AN #2N-68",
+      "contraseña":"",
       "departamentop": "valle del cauca",
       "ciudad": "cali",
       "pedido": [
@@ -147,8 +147,8 @@
       "documentoIdentidad": "1.118.309.397",
       "correo": "Cristhian.garzon@correounivalle.edu.co",
       "celular": "3167326901",
-      "telefono": "",
       "direccion": "Cra 3N #14-47",
+      "contraseña":"",
       "departamentop": "valle del cauca",
       "ciudad": "yumbo",
       "pedido": [
