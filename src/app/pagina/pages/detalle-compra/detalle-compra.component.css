@@ -1,0 +1,17 @@
+.conteiner {
+    margin: 10px;
+    padding: 80px 300px;
+  }
+  
+  .boton {
+    background-color: #feddbe;
+    left: 65px;
+    width: 300px;
+    height: 40px;
+  }
+  .l {
+    left: 30px;
+  }
+  h1{
+      text-align: center;
+  }

@@ -7,6 +7,7 @@ import { DetalleProductoComponent } from '../pagina/pages/detalle-producto/detal
 import { InicioSesionComponent } from '../pagina/pages/inicio-sesion/inicio-sesion.component';
 import { RegistroUsuarioComponent } from '../pagina/pages/registro-usuario/registro-usuario.component';
 import { AgregarComponent } from '../pagina/pages/agregar/agregar.component';
+import { DetalleCompraComponent } from '../pagina/pages/detalle-compra/detalle-compra.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path:'carrito',
     component: CarritoComponent,
+  },
+  {
+    path:'compra',
+    component:DetalleCompraComponent, 
   },
   {
     path:'producto',
@@ -34,7 +39,9 @@ const routes: Routes = [
     path:'registro',
     component: RegistroUsuarioComponent,
 
-    path:'editar',
+  },
+  {
+    path:'agregar',
     component: AgregarComponent,
   },
   {

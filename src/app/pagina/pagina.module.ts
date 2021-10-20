@@ -18,6 +18,7 @@ import { InicioSesionComponent } from './pages/inicio-sesion/inicio-sesion.compo
 import { RegistroUsuarioComponent } from './pages/registro-usuario/registro-usuario.component';
 import { AgregarComponent } from './pages/agregar/agregar.component';
 import { ConfirmarComponent } from './components/confirmar/confirmar.component';
+import { DetalleCompraComponent } from './pages/detalle-compra/detalle-compra.component';
 
 
 
@@ -34,7 +35,8 @@ import { ConfirmarComponent } from './components/confirmar/confirmar.component';
     InicioSesionComponent,
     RegistroUsuarioComponent,
     AgregarComponent,
-    ConfirmarComponent
+    ConfirmarComponent,
+    DetalleCompraComponent
 
   ],
   imports: [
