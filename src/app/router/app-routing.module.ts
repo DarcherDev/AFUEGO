@@ -33,8 +33,9 @@ const routes: Routes = [
   {
     path:'registro',
     component: RegistroUsuarioComponent,
-
-    path:'editar',
+  },
+  {
+    path:'agregar',
     component: AgregarComponent,
   },
   {

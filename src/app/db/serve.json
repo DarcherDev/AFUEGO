@@ -1,10 +1,18 @@
 {
-  "usuarios": [
+  "users": [
     {
       "id": "1",
-      "usuario": "archer",
+      "user": "archer",
+      "rol": "admin",
       "email": "daniel@outlook.com",
-      "password": "20425"
+      "password": "123"
+    },
+    {
+      "id": "2",
+      "user": "salo",
+      "rol": "user",
+      "email": "salome@outlook.com",
+      "password": "123"
     }
   ],
   "prendas": [
@@ -96,7 +104,7 @@
       "correo": "daniel_aristizabal@outlook.com",
       "celular": "3153239411",
       "direccion": "carrera 32a #9b-48",
-      "contraseña":"",
+      "contraseña": "123456",
       "departamentop": "valle del cauca",
       "ciudad": "cali",
       "pedido": [
@@ -116,7 +124,7 @@
       "correo": "",
       "celular": "3175450659",
       "direccion": "Calle 62AN #2N-68",
-      "contraseña":"",
+      "contraseña": "",
       "departamentop": "valle del cauca",
       "ciudad": "cali",
       "pedido": [
@@ -148,7 +156,7 @@
       "correo": "Cristhian.garzon@correounivalle.edu.co",
       "celular": "3167326901",
       "direccion": "Cra 3N #14-47",
-      "contraseña":"",
+      "contraseña": "",
       "departamentop": "valle del cauca",
       "ciudad": "yumbo",
       "pedido": [
@@ -159,6 +167,17 @@
           "estado": "enviado"
         }
       ]
+    },
+    {
+      "nombres": "camilo",
+      "apellidos": "aristizabal",
+      "documentoIdentidad": "1143871999",
+      "correo": "camilo_aristizabal@outlook.com",
+      "celular": "3162436294",
+      "direccion": "carrera 32 a # 9b - 49",
+      "departamento": "valle del cauca",
+      "cidudad": "cali",
+      "id": "IxiswXa"
     }
   ]
 }
