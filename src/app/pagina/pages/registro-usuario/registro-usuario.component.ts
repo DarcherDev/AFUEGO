@@ -58,6 +58,7 @@ export class RegistroUsuarioComponent implements OnInit {
       //crear
       this.clienteService.agregarCliente(this.cliente).subscribe(cliente => {
         this.router.navigate(['/home']);
+        this.mostrarsnackBar('Registro exitoso')
       })      
     
   }
