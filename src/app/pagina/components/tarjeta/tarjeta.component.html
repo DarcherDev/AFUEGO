@@ -8,7 +8,7 @@
 
     <mat-card-content>
         <p>
-            <strong>Precio</strong> {{ prenda.precio }}
+            <strong>Precio</strong> {{ prenda.precio | currency:'COP':'symbol-narrow':'1.0-0'}}
             <br>
             <strong>Descripcion: </strong> {{ prenda.descripcion}}
         </p>

@@ -1,0 +1,29 @@
+<div fxLayout="column">
+
+    <div fxLayout="column">
+        <h3>Buscador</h3>
+        <mat-form-field>
+                <input type="text"
+                    placeholder="Pick one"
+                    aria-label="Number"
+                    matInput
+                    [(ngModel)]="termino"
+                    [matAutocomplete]="auto"
+                    (input)="buscando()">
+            <mat-autocomplete autoActiveFirstOption (optionSelected)="opcionSeleccionada( $event )" #auto="matAutocomplete">
+              <mat-option *ngFor="let prenda of prendas " [value]="prenda">
+                {{prenda.nombre}} 
+              </mat-option>
+              <mat-option value="" *ngIf="prendas.length===0 && termino.trim().length > 0">
+                  No se encontro {{termino}}
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+    </div>
+  
+    <div *ngIf="prendaSeleccionada.id">
+      <app-informacion-prenda [prenda]="prendaSeleccionada"></app-informacion-prenda>
+        
+    </div>
+  </div>
+  

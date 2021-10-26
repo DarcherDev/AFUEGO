@@ -7,6 +7,7 @@ import { DetalleProductoComponent } from '../pagina/pages/detalle-producto/detal
 import { InicioSesionComponent } from '../pagina/pages/inicio-sesion/inicio-sesion.component';
 import { RegistroUsuarioComponent } from '../pagina/pages/registro-usuario/registro-usuario.component';
 import { AgregarComponent } from '../pagina/pages/agregar/agregar.component';
+import { BuscarComponent } from '../pagina/pages/buscar/buscar.component';
 
 
 const routes: Routes = [
@@ -41,7 +42,10 @@ const routes: Routes = [
   {
     path:'editar/:id',
     component: AgregarComponent,
-
+  },
+  {
+    path:'buscar',
+    component: BuscarComponent,
   },
   {
     path:'**',

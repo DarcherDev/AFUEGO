@@ -1,0 +1,20 @@
+<div fxLayout="row" fxLayout.xs="column" fxLayoutGap="30px">
+  <div fxFlex="50">
+    <br />
+    <img [src]="prenda | imagen" />
+  </div>
+  <div fxFlex="50">
+    <mat-list>
+      <strong>Nombre</strong>
+      <mat-list-item>{{ prenda.nombre }}</mat-list-item>
+      <mat-divider></mat-divider>
+
+      <strong>Descripcion</strong>
+      <mat-list-item>{{ prenda.descripcion }}</mat-list-item>
+      <mat-divider></mat-divider>
+
+      <strong>Precio</strong> 
+      <mat-list-item>{{ prenda.precio | currency:'COP':'symbol-narrow':'1.0-0'}}</mat-list-item>
+    </mat-list>
+  </div>
+</div>

@@ -16,7 +16,10 @@ export class PrendaService {
   constructor(http: HttpClient) {
     this.http = http;
   }
-  
+
+  getSugerencias(termino: string): Observable<Prenda[]> {
+    return this.http.get<Prenda[]>(`${this.url}/prendas?q=${termino}&_limit=5`);
+  }
   getPrenda(): Observable<Prenda[]> {
     return this.http.get<Prenda[]>(`${this.url}/prendas`);
   }
