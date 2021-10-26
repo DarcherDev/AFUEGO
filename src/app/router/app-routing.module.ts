@@ -1,12 +1,7 @@
 import { NgModule} from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-
 import { AuthGuard } from '../auth/guards/auth.guard';
-
-import { HomeComponent } from '../pagina/pages/home/home.component';
-import { InicioSesionComponent } from '../pagina/pages/inicio-sesion/inicio-sesion.component';
-
 
 const routes: Routes = [
   {

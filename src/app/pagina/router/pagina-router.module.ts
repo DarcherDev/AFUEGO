@@ -11,7 +11,6 @@ import { RegistroUsuarioComponent } from '../pages/registro-usuario/registro-usu
 const routes: Routes = [
   {
     path:'',
-    component:HomeComponent,
     children:[
       {
         path:'home',
@@ -55,4 +54,4 @@ const routes: Routes = [
     RouterModule
   ]
 })
-export class PaginaModule { }
+export class PaginaRouterModule { }
