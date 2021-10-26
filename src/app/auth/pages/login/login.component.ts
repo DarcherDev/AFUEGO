@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
+import { Auth } from '../../interfaces/auth.interfaces';
 
 @Component({
   selector: 'app-login',
@@ -9,6 +10,14 @@ import { AuthService } from '../../services/auth.service';
 })
 export class LoginComponent   {
 
+  user: Auth = {
+    id : '',
+    user : '',
+    rol : '',
+    email : '',
+    password : '',
+  }
+  
   hide=true;
 
   private router:Router;

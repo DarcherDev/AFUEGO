@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import {MatSnackBar} from '@angular/material/snack-bar';
-import {MatDialog} from '@angular/material/dialog';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatDialog } from '@angular/material/dialog';
 
 import { switchMap } from 'rxjs/operators';
 
@@ -18,17 +18,17 @@ import { ClienteService } from '../../services/cliente.service';
   styleUrls: ['./registro-usuario.component.css']
 })
 export class RegistroUsuarioComponent implements OnInit {
-  hide=true;
+  hide = true;
 
   cliente: Cliente = {
-    nombres:'',
-    apellidos:'',
-    documentoIdentidad:'',
-    correo:'',
-    celular:'',
-    direccion:'',
-    departamento:'',
-    cidudad:'',
+    nombres: '',
+    apellidos: '',
+    documentoIdentidad: '',
+    correo: '',
+    celular: '',
+    direccion: '',
+    departamento: '',
+    cidudad: '',
   }
 
   private clienteService: ClienteService;
@@ -36,8 +36,8 @@ export class RegistroUsuarioComponent implements OnInit {
   private router: Router;
   private snackBar: MatSnackBar;
   public dialog: MatDialog;
-  
-  constructor(clienteService: ClienteService, activatedRoute: ActivatedRoute, router: Router, snackBar: MatSnackBar, dialog: MatDialog){
+
+  constructor(clienteService: ClienteService, activatedRoute: ActivatedRoute, router: Router, snackBar: MatSnackBar, dialog: MatDialog) {
     this.clienteService = clienteService;
     this.activatedRoute = activatedRoute;
     this.router = router;
@@ -48,23 +48,22 @@ export class RegistroUsuarioComponent implements OnInit {
 
 
   ngOnInit(): void {
-    
+
   }
-  
-  guardar(){
-    if(this.cliente.nombres.trim().length === 0){
+
+  guardar() {
+    if (this.cliente.nombres.trim().length === 0) {
       return;
     }
-      //crear
-      this.clienteService.agregarCliente(this.cliente).subscribe(cliente => {
-        this.router.navigate(['/home']);
-        this.mostrarsnackBar('Registro exitoso')
-      })      
-    
+    //crear
+    this.clienteService.agregarCliente(this.cliente).subscribe(cliente => {
+      this.router.navigate(['/home']);
+      this.mostrarsnackBar('Registro exitoso')
+    })
   }
 
   mostrarsnackBar(mensaje: string) {
-    this.snackBar.open(mensaje, 'ok',{
+    this.snackBar.open(mensaje, 'ok', {
       duration: 2500
     });
   }
