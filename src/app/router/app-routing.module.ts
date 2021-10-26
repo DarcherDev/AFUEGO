@@ -1,59 +1,36 @@
-import { NgModule, Component } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { NgModule} from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+
+
+import { AuthGuard } from '../auth/guards/auth.guard';
+
 import { HomeComponent } from '../pagina/pages/home/home.component';
-import { CarritoComponent } from '../pagina/pages/carrito/carrito.component';
-import { ProductoComponent } from '../pagina/pages/producto/producto.component';
-import { DetalleProductoComponent } from '../pagina/pages/detalle-producto/detalle-producto.component';
 import { InicioSesionComponent } from '../pagina/pages/inicio-sesion/inicio-sesion.component';
-import { RegistroUsuarioComponent } from '../pagina/pages/registro-usuario/registro-usuario.component';
-import { AgregarComponent } from '../pagina/pages/agregar/agregar.component';
-import { BuscarComponent } from '../pagina/pages/buscar/buscar.component';
 
 
 const routes: Routes = [
   {
-    path:'home',
-    component: HomeComponent,
+    path:'auth',
+    loadChildren: () => import('../auth/auth.module').then( m => m.AuthModule)
   },
   {
-    path:'carrito',
-    component: CarritoComponent,
+    path:'pagina',
+    loadChildren: () => import('../pagina/pagina.module').then( m => m.PaginaModule)
   },
   {
-    path:'producto',
-    component: ProductoComponent,
-  },
-  {
-    path:'detalle',
-    component: DetalleProductoComponent,
-  },
-  {
-    path:'login',
-    component: InicioSesionComponent,
-  },
-  {
-    path:'registro',
-    component: RegistroUsuarioComponent,
-  },
-  {
-    path:'agregar',
-    component: AgregarComponent,
-  },
-  {
-    path:'editar/:id',
-    component: AgregarComponent,
-  },
-  {
-    path:'buscar',
-    component: BuscarComponent,
+    path:'admin',
+    loadChildren: () => import('../admin/admin.module').then( m => m.AdminModule),
+    canLoad: [ AuthGuard ],
+    canActivate: [ AuthGuard ]
   },
   {
     path:'**',
-    redirectTo:'home'
+    redirectTo:'pagina'
   }
 ];
 
 @NgModule({
+  declarations: [],
   imports: [
     RouterModule.forRoot(routes)
   ],
