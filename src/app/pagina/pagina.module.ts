@@ -18,9 +18,9 @@ import { RegistroUsuarioComponent } from './pages/registro-usuario/registro-usua
 import { AgregarComponent } from './pages/agregar/agregar.component';
 import { ConfirmarComponent } from './components/confirmar/confirmar.component';
 import { DetalleCompraComponent } from './pages/detalle-compra/detalle-compra.component';
-import { BuscarComponent } from './pages/buscar/buscar.component';
 import { InformacionPrendaComponent } from './components/informacion-prenda/informacion-prenda.component';
 import { SliderComponent } from './components/slider/slider.component';
+import { BuscarComponent } from './pages/buscar/buscar.component';
 
 
 @NgModule({
@@ -36,7 +36,7 @@ import { SliderComponent } from './components/slider/slider.component';
     RegistroUsuarioComponent,
     AgregarComponent,
     ConfirmarComponent,
-    DetalleCompraComponent
+    DetalleCompraComponent,
     BuscarComponent,
     InformacionPrendaComponent,
     SliderComponent
