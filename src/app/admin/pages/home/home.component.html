@@ -1,13 +1,17 @@
 <div class="flex-column col-md-12">
-
+  
   <!--TEXTO-->
   <section class="w-50 mx-auto text-center pt-5">
-    <h2 class="p-3 border-top border-3"><span class="text-danger fw-bold">Afuego</span>, expresa tu estilo</h2>
+    <h2 class="p-3 border-top border-3">
+      <span class="text-danger fw-bold">Afuego</span>, expresa tu estilo
+    </h2>
+  <span> {{auth.user}}</span>
+
   </section>
-  <br>
+  <br />
+  <button mat-button (click)="logout()">Logout</button>
   <!--SERVICIOS-->
   <section>
     <app-producto></app-producto>
   </section>
-
 </div>

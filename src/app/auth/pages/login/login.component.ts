@@ -37,17 +37,18 @@ export class LoginComponent {
 
     for (let index = 0; index < this.users.length; index++) {
       if ((this.users[index].email === this.user.email) && (this.users[index].password === this.user.password)) {
-        // this.user = this.users[index];
-        // console.log(this.user);
-        this.login();
+        this.user = this.users[index];
+        console.log(this.user)
+        this.login(this.user);
+
       }else{
         console.log("usuario no encontrado");
       }
     }
   }
 
-  login() {
-    this.authService.login().subscribe(resp => {
+  login(usuario: Auth) {
+    this.authService.login(usuario.id!).subscribe(resp => {
       if (resp.id) {
         this.router.navigate(['./admin']);
       }
@@ -55,7 +56,7 @@ export class LoginComponent {
   }
 
   logout() {
-    this.router.navigate(['404']);
+    this.router.navigate(['**']);
   }
 
 }

@@ -30,7 +30,7 @@ export class AuthService {
     if(!localStorage.getItem('token')){
       return  of(false);
     }
-    return this.http.get<Auth>(`${this.url}/users/1`)
+    return this.http.get<Auth>(`${this.url}/users/`)
     .pipe(
       map( auth => {
         this._auth = auth;
@@ -39,8 +39,8 @@ export class AuthService {
     );
   }
 
-  login(){
-    return this.http.get<Auth>(`${this.url}/users/1`)
+  login(id:string){
+    return this.http.get<Auth>(`${this.url}/users/${ id }`)
     .pipe(
       tap (auth => this._auth = auth),
       tap(auth => localStorage.setItem('token', auth.id))
