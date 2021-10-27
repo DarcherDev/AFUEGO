@@ -1,17 +1,24 @@
 <div class="flex-column col-md-12">
-  
+
+  <!-- BOTON DE CERRAR SESION -->
+  <button mat-button (click)="logout()">Logout</button>
+
   <!--TEXTO-->
   <section class="w-50 mx-auto text-center pt-5">
     <h2 class="p-3 border-top border-3">
       <span class="text-danger fw-bold">Afuego</span>, expresa tu estilo
     </h2>
-  <span> {{auth.user}}</span>
-
   </section>
-  <br />
-  <button mat-button (click)="logout()">Logout</button>
+  <br/>
+  <mat-nav-list>
+    <a [routerLink]="['/admin/agregar']" mat-list-item>
+      <mat-icon mat-list-icon>add</mat-icon>
+      <span>agregar de Prenda</span>
+    </a>
+  </mat-nav-list>
   <!--SERVICIOS-->
   <section>
     <app-producto></app-producto>
   </section>
+  <router-outlet></router-outlet>
 </div>

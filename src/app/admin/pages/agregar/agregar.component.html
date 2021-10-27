@@ -48,8 +48,14 @@
                 <mat-icon>delete</mat-icon>
                 Borrar
             </button>
-        </div>
+            
+            <span class="spacer"></span>
 
+            <button mat-raised-button color="warn" [routerLink]="['/admin']">
+                <mat-icon>cancel</mat-icon>
+                Cancelar
+            </button>
+        </div>
     </div>    
     <div fxFlex="50">
         <img [src]="prenda  | imagen">

@@ -28,4 +28,8 @@ export class HomeComponent implements OnInit {
   get auth(){
     return this.authService.auth;
   }
+
+  agregar(){
+    this.router.navigate(['/admin/agregar']);
+  }
 }

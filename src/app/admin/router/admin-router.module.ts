@@ -7,16 +7,23 @@ import { AgregarComponent } from '../pages/agregar/agregar.component';
 const routes: Routes = [
     {
         path: '',
-        component: HomeComponent,
         children: [
+            {
+                path: 'home',
+                component: HomeComponent,
+            },
             {
                 path: 'agregar',
                 component: AgregarComponent,
             },
             {
-                path:'editar/:id',
+                path: 'editar/:id',
                 component: AgregarComponent,
             },
+            {
+                path: '**',
+                redirectTo: 'home'
+            }
         ]
     }
 ]

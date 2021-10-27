@@ -62,7 +62,7 @@ export class AgregarComponent implements OnInit {
     }else{
       //crear
       this.prendaService.agregarPrenda(this.prenda).subscribe(prenda => {
-        this.router.navigate(['/prendas/editar', prenda.id]);
+        this.router.navigate(['/admin/editar', prenda.id]);
       })      
     }
   }
@@ -76,7 +76,7 @@ export class AgregarComponent implements OnInit {
     dialog.afterClosed().subscribe((result) =>{
       if( result){
         this.prendaService.BorrarPrenda(this.prenda.id!).subscribe(resp =>{
-          this.router.navigate(['/home']);
+          this.router.navigate(['/admin/home']);
           this.mostrarsnackBar('Registro eliminado')
         });
       }

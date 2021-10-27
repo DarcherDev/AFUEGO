@@ -19,6 +19,7 @@ import { AgregarComponent } from './pages/agregar/agregar.component';
 import { ConfirmarComponent } from './components/confirmar/confirmar.component';
 import { BuscarComponent } from './pages/buscar/buscar.component';
 import { InformacionPrendaComponent } from './components/informacion-prenda/informacion-prenda.component';
+import { SliderComponent } from './components/slider/slider.component';
 
 
 
@@ -38,7 +39,8 @@ import { InformacionPrendaComponent } from './components/informacion-prenda/info
     AgregarComponent,
     ConfirmarComponent,
     BuscarComponent,
-    InformacionPrendaComponent
+    InformacionPrendaComponent,
+    SliderComponent
   ],
   imports: [
     CommonModule,
@@ -46,7 +48,6 @@ import { InformacionPrendaComponent } from './components/informacion-prenda/info
     MaterialModule,
     FormsModule,
     PaginaRouterModule
-    
   ]
 })
 export class PaginaModule { }

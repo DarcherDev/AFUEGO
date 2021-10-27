@@ -7,38 +7,39 @@ import { ProductoComponent } from '../pages/producto/producto.component';
 import { DetalleProductoComponent } from '../pages/detalle-producto/detalle-producto.component';
 import { BuscarComponent } from '../pages/buscar/buscar.component';
 import { RegistroUsuarioComponent } from '../pages/registro-usuario/registro-usuario.component';
+import { AgregarComponent } from '../../admin/pages/agregar/agregar.component';
 
 const routes: Routes = [
   {
-    path:'',
-    children:[
+    path: '',
+    children: [
       {
-        path:'home',
+        path: 'home',
         component: HomeComponent,
       },
       {
-        path:'carrito',
+        path: 'carrito',
         component: CarritoComponent,
       },
       {
-        path:'producto',
+        path: 'producto',
         component: ProductoComponent,
       },
       {
-        path:'detalle',
+        path: 'detalle',
         component: DetalleProductoComponent,
       },
       {
-        path:'buscar',
+        path: 'buscar',
         component: BuscarComponent,
       },
       {
-        path:'registro',
+        path: 'registro',
         component: RegistroUsuarioComponent,
       },
       {
-        path:'**',
-        redirectTo:'home'
+        path: '**',
+        redirectTo: 'home'
       }
     ]
   }
@@ -50,7 +51,7 @@ const routes: Routes = [
   imports: [
     RouterModule.forChild(routes)
   ],
-  exports:[
+  exports: [
     RouterModule
   ]
 })
