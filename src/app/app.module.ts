@@ -10,9 +10,13 @@ import { AppRoutingModule } from './router/app-routing.module';
 import { PaginaModule } from './pagina/pagina.module';
 import { SharedModule } from './shared/shared.module';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
+    
+    
   ],
   imports: [
     BrowserModule,

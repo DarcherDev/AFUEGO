@@ -1,0 +1,87 @@
+<div class="conteiner" fxLayout="column" fxLayoutAlign="space-around center">
+  <div fxLayout="column" fxLayoutAlign="space-evenly start">
+    <h1>Registro</h1>
+    <div>
+      <mat-form-field appearance="outline">
+        <mat-label>Ingrese su nombres</mat-label>
+        <input matInput type="name" [(ngModel)]="cliente.nombres" placeholder="Nombres" />
+      </mat-form-field>
+      <mat-form-field class="l" appearance="outline">
+        <mat-label>Ingrese su apellidos</mat-label>
+        <input matInput type="family-name" [(ngModel)]="cliente.apellidos" placeholder="Apellidos" />
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field appearance="outline">
+        <mat-label>Ingrese numero de documento</mat-label>
+        <input matInput [(ngModel)]="cliente.documentoIdentidad" placeholder="Documento" />
+      </mat-form-field>
+      <mat-form-field class="l" appearance="outline">
+        <mat-label>Ingrese su correo electronico</mat-label>
+        <input matInput type="email" [(ngModel)]="cliente.correo" placeholder="Correo" />
+      </mat-form-field>
+    </div>
+    
+    <div>
+      <mat-form-field appearance="outline">
+        <mat-label>Ingrese su numero celular</mat-label>
+        <input matInput type="tel" [(ngModel)]="cliente.celular" placeholder="Celular" />
+      </mat-form-field>
+      <mat-form-field class="l" appearance="outline">
+        <mat-label>Ingrese su direccion</mat-label>
+        <input matInput type="address" [(ngModel)]="cliente.direccion" placeholder="Direccion" />
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field appearance="outline">
+        <mat-label>Ingrese Departamento</mat-label>
+        <input matInput [(ngModel)]="cliente.departamento" placeholder="Departamento" />
+      </mat-form-field>
+      <mat-form-field class="l" appearance="outline">
+        <mat-label>Ingrese Ciudad</mat-label>
+        <input matInput [(ngModel)]="cliente.cidudad" placeholder="Ciudad" />
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-form-field appearance="outline">
+        <mat-label>Enter your password</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'" />
+        <button
+          mat-icon-button
+          matSuffix
+          (click)="hide = !hide"
+          [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hide"
+        >
+          <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+        </button>
+      </mat-form-field>
+      <mat-form-field class="l" appearance="outline">
+        <mat-label>Enter your password</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'" />
+        <button
+          mat-icon-button
+          matSuffix
+          (click)="hide = !hide"
+          [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hide"
+        >
+          <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+        </button>
+      </mat-form-field>
+    </div>
+    <br />
+    <div>
+      <button class="boton" mat-raised-button (click)="guardar()">
+        <mat-icon>add</mat-icon>
+        Registrarse
+      </button>
+      <button class="boton2" mat-raised-button>
+        <mat-icon>do_disturb</mat-icon>
+
+        Cancelar
+      </button>
+    </div>
+  </div>
+</div>

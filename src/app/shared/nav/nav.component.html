@@ -1,7 +1,9 @@
 <nav mat-tab-nav-bar >
-    <a mat-tab-link [routerLink]="['home']" (click)="activeLink = 'Inicio'" [active]="activeLink == 'A'"> Inicio</a>
-    <a mat-tab-link [routerLink]="['carrito']" (click)="activeLink = 'Carrito'" [active]="activeLink == 'B'">Carrito</a>
-    <!-- <a mat-tab-link [routerLink]="['producto']" (click)="activeLink = 'Producto'" [active]="activeLink == 'C'">Producto</a> -->
+    <a mat-tab-link [routerLink]="['pagina/home']" (click)="activeLink = 'pagina/Inicio'" [active]="activeLink == 'A'"> Inicio</a>
+    <a mat-tab-link [routerLink]="['pagina/carrito']" (click)="activeLink = 'pagina/carrito'" [active]="activeLink == 'B'">Carrito</a>
+    <a mat-tab-link [routerLink]="['pagina/detalle']" (click)="activeLink = 'pagina/detalle'" [active]="activeLink == 'B'">detalle</a>
+    <a mat-tab-link [routerLink]="['pagina/registro']" (click)="activeLink = 'pagina/registro'" [active]="activeLink == 'B'">registro</a>
+
 </nav> 
 <router-outlet></router-outlet>
 

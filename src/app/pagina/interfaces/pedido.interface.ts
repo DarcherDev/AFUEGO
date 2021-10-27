@@ -1,5 +1,5 @@
 export interface Pedido {
-    prenda:number;
+    prenda:string;
     cantidad:number;
     total:number;
     estado:string;
