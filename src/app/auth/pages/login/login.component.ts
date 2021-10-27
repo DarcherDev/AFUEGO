@@ -8,35 +8,53 @@ import { Auth } from '../../interfaces/auth.interfaces';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent   {
+export class LoginComponent {
+
+  users: Auth[] = [];
 
   user: Auth = {
-    id : '',
-    user : '',
-    rol : '',
-    email : '',
-    password : '',
+    id: '',
+    user: '',
+    rol: '',
+    email: '',
+    password: '',
   }
-  
-  hide=true;
 
-  private router:Router;
-  private authService:AuthService;
+  hide = true;
+  private autetificado: boolean = false;
 
-  constructor(router:Router, authService:AuthService) {
-    this.router=router;
-    this.authService=authService;
-   }
+  private router: Router;
+  private authService: AuthService;
 
-  login(){
-    this.authService.login().subscribe( resp => {
-      if(resp.id){
+  constructor(router: Router, authService: AuthService) {
+    this.router = router;
+    this.authService = authService;
+  }
+
+  entrar() {
+
+    this.authService.getUsuario().subscribe(users => this.users = users);
+
+    for (let index = 0; index < this.users.length; index++) {
+      if ((this.users[index].email === this.user.email) && (this.users[index].password === this.user.password)) {
+        // this.user = this.users[index];
+        // console.log(this.user);
+        this.login();
+      }else{
+        console.log("usuario no encontrado");
+      }
+    }
+  }
+
+  login() {
+    this.authService.login().subscribe(resp => {
+      if (resp.id) {
         this.router.navigate(['./admin']);
       }
     })
   }
 
-  logout(){
+  logout() {
     this.router.navigate(['404']);
   }
 

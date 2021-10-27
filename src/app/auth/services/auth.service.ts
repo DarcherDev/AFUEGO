@@ -22,6 +22,10 @@ export class AuthService {
     this.http = http;
   }
 
+  getUsuario(): Observable<Auth[]> {
+    return this.http.get<Auth[]>(`${this.url}/users`);
+  }
+
   verificaAutenticacion():Observable <boolean>{
     if(!localStorage.getItem('token')){
       return  of(false);
