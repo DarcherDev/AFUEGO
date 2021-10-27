@@ -3,8 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
 
-
-import { RouterModule } from '@angular/router';
+import { PaginaRouterModule } from './router/pagina-router.module';
 import { MaterialModule } from '../material/materia.module';
 
 import { CarritoComponent } from './pages/carrito/carrito.component';
@@ -19,8 +18,9 @@ import { RegistroUsuarioComponent } from './pages/registro-usuario/registro-usua
 import { AgregarComponent } from './pages/agregar/agregar.component';
 import { ConfirmarComponent } from './components/confirmar/confirmar.component';
 import { DetalleCompraComponent } from './pages/detalle-compra/detalle-compra.component';
-
-
+import { BuscarComponent } from './pages/buscar/buscar.component';
+import { InformacionPrendaComponent } from './components/informacion-prenda/informacion-prenda.component';
+import { SliderComponent } from './components/slider/slider.component';
 
 
 @NgModule({
@@ -37,14 +37,16 @@ import { DetalleCompraComponent } from './pages/detalle-compra/detalle-compra.co
     AgregarComponent,
     ConfirmarComponent,
     DetalleCompraComponent
-
+    BuscarComponent,
+    InformacionPrendaComponent,
+    SliderComponent
   ],
   imports: [
     CommonModule,
     FlexLayoutModule,
     MaterialModule,
     FormsModule,
-    RouterModule
+    PaginaRouterModule
   ]
 })
 export class PaginaModule { }

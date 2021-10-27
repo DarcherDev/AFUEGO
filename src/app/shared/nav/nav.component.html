@@ -1,12 +1,9 @@
 <nav mat-tab-nav-bar >
-    <a mat-tab-link [routerLink]="['home']" (click)="activeLink = 'Inicio'" [active]="activeLink == 'A'"> Inicio</a>
-    <a mat-tab-link [routerLink]="['carrito']" (click)="activeLink = 'Carrito'" [active]="activeLink == 'B'">Carrito</a>
-    <a mat-tab-link [routerLink]="['detalle']" (click)="activeLink = 'detalle'" [active]="activeLink == 'B'">detalle</a>
-    <a mat-tab-link [routerLink]="['login']" (click)="activeLink = 'login'" [active]="activeLink == 'B'">login</a>
-    <a mat-tab-link [routerLink]="['registro']" (click)="activeLink = 'Carrito'" [active]="activeLink == 'B'">registro</a>
-    <a mat-tab-link [routerLink]="['editar']" (click)="activeLink = 'editar'" [active]="activeLink == 'B'">agregar</a>
+    <a mat-tab-link [routerLink]="['pagina/home']" (click)="activeLink = 'pagina/Inicio'" [active]="activeLink == 'A'"> Inicio</a>
+    <a mat-tab-link [routerLink]="['pagina/carrito']" (click)="activeLink = 'pagina/carrito'" [active]="activeLink == 'B'">Carrito</a>
+    <a mat-tab-link [routerLink]="['pagina/detalle']" (click)="activeLink = 'pagina/detalle'" [active]="activeLink == 'B'">detalle</a>
+    <a mat-tab-link [routerLink]="['pagina/registro']" (click)="activeLink = 'pagina/registro'" [active]="activeLink == 'B'">registro</a>
 
-    <!-- <a mat-tab-link [routerLink]="['producto']" (click)="activeLink = 'Producto'" [active]="activeLink == 'C'">Producto</a> -->
 </nav> 
 <router-outlet></router-outlet>
 

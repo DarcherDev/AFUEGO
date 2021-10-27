@@ -5,10 +5,10 @@ export interface Cliente {
     nombres: string;
     apellidos: string;
     documentoIdentidad: string;
+    correo:string;
     celular: string;
-    telefono: string;
     direccion: string;
     departamento: string;
     cidudad: string;
-    pedido: Pedido[];
+    pedido?: Pedido[];
 }

@@ -9,53 +9,33 @@ import { RegistroUsuarioComponent } from '../pagina/pages/registro-usuario/regis
 import { AgregarComponent } from '../pagina/pages/agregar/agregar.component';
 import { DetalleCompraComponent } from '../pagina/pages/detalle-compra/detalle-compra.component';
 
+import { Routes, RouterModule } from '@angular/router';
+
+import { AuthGuard } from '../auth/guards/auth.guard';
 
 const routes: Routes = [
   {
-    path:'home',
-    component: HomeComponent,
+    path:'auth',
+    loadChildren: () => import('../auth/auth.module').then( m => m.AuthModule)
   },
   {
-    path:'carrito',
-    component: CarritoComponent,
+    path:'pagina',
+    loadChildren: () => import('../pagina/pagina.module').then( m => m.PaginaModule)
   },
   {
-    path:'compra',
-    component:DetalleCompraComponent, 
-  },
-  {
-    path:'producto',
-    component: ProductoComponent,
-  },
-  {
-    path:'detalle',
-    component: DetalleProductoComponent,
-  },
-  {
-    path:'login',
-    component: InicioSesionComponent,
-  },
-  {
-    path:'registro',
-    component: RegistroUsuarioComponent,
-
-  },
-  {
-    path:'agregar',
-    component: AgregarComponent,
-  },
-  {
-    path:'editar/:id',
-    component: AgregarComponent,
-
+    path:'admin',
+    loadChildren: () => import('../admin/admin.module').then( m => m.AdminModule),
+    canLoad: [ AuthGuard ],
+    canActivate: [ AuthGuard ]
   },
   {
     path:'**',
-    redirectTo:'home'
+    redirectTo:'pagina'
   }
 ];
 
 @NgModule({
+  declarations: [],
   imports: [
     RouterModule.forRoot(routes)
   ],
