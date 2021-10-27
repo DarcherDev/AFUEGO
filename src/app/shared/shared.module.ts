@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from './footer/footer.component';
 import { NavComponent } from './nav/nav.component';
-import { SiderbarComponent } from './siderbar/siderbar.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from '../material/materia.module';
 import { RouterModule } from '@angular/router';
@@ -13,8 +12,7 @@ import { RouterModule } from '@angular/router';
   declarations: [
     FooterComponent,
     NavComponent,
-    SiderbarComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     CommonModule,
@@ -25,8 +23,6 @@ import { RouterModule } from '@angular/router';
   exports:[
     FooterComponent,
     NavComponent,
-    SiderbarComponent,
-    
   ]
 })
 export class SharedModule { }

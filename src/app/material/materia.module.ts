@@ -14,11 +14,10 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
 import {MatSnackBarModule} from '@angular/material/snack-bar'; 
 import {MatDialogModule} from '@angular/material/dialog'; 
-
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {MatListModule} from '@angular/material/list';
 
 
 
@@ -40,6 +39,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatSnackBarModule,
     MatDialogModule,
     FormsModule,
+    MatAutocompleteModule,
+    MatListModule,
   ]
 })
 export class MaterialModule { }
