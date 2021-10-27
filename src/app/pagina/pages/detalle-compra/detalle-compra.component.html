@@ -1,0 +1,54 @@
+<div class="conteiner" fxLayout="column" fxLayoutAlign="space-around center">
+    
+    <h1>Detalle de compra</h1>
+    <div fxLayout="column" fxLayoutAlign="space-evenly start">
+    <div >
+            <mat-form-field appearance="outline">
+                <mat-label>Ingrese su nombre</mat-label>
+                <input matInput placeholder="Nombre"required>
+            </mat-form-field>
+            <mat-form-field class="l" appearance="outline">
+                <mat-label>Ingrese su apellido</mat-label>
+                <input matInput placeholder="Apellido" required>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="outline">
+                <mat-label>Correo electronico</mat-label>
+                <input matInput placeholder="Correo" required>
+            </mat-form-field>
+            <mat-form-field class="l" appearance="outline">
+                <mat-label>Direccion</mat-label>
+                <input matInput placeholder="Direccion" required>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="outline">
+                <mat-label>Numero celular</mat-label>
+                <input matInput placeholder="Celular" required>
+            </mat-form-field>
+            <mat-form-field class="l" appearance="outline">
+                <mat-label>Ciudad</mat-label>
+                <input matInput placeholder="Ciudad" required>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="outline">
+                <mat-label>Region</mat-label>
+                <mat-select required>
+                  <mat-option value="option">Valle del cauca</mat-option>
+                </mat-select>
+                <mat-hint align="end">Here's the dropdown arrow ^</mat-hint>
+              </mat-form-field>
+            <mat-form-field class="l" appearance="outline">
+                <mat-label>Codigo postal</mat-label>
+                <input matInput placeholder="codigo postal de la ciudad" required>
+            </mat-form-field>
+        </div>
+        <br>
+        <div>
+            <button class="boton" mat-raised-button>Continuar</button>
+        </div>
+    </div>
+
+</div>
