@@ -13,8 +13,14 @@
       <mat-list-item>{{ prenda.descripcion }}</mat-list-item>
       <mat-divider></mat-divider>
 
-      <strong>Precio</strong> 
-      <mat-list-item>{{ prenda.precio | currency:'COP':'symbol-narrow':'1.0-0'}}</mat-list-item>
+      <strong>Precio</strong>
+      <mat-list-item>{{
+        prenda.precio | currency: "COP":"symbol-narrow":"1.0-0"
+      }}</mat-list-item>
     </mat-list>
+
+    <button mat-button color="warn" [routerLink]="['/pagina/carrito']">
+      Añadir al carrito
+    </button>
   </div>
 </div>

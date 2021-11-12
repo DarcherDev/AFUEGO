@@ -44,7 +44,5 @@ export class BuscarComponent implements OnInit {
       this.termino = prenda.nombre;
       
       this.prendaService.getPrendaPorId(prenda.id!).subscribe(prenda => this.prendaSeleccionada=prenda);
-    
   }
-
 }

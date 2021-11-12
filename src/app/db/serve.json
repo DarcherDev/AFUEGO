@@ -2,17 +2,28 @@
   "users": [
     {
       "id": "1",
-      "user": "archer",
+      "user": "admin",
       "rol": "admin",
-      "email": "daniel@outlook.com",
+      "email": "admin@outlook.com",
       "password": "123"
+    }
+  ],
+  "pedidos": [
+    {
+      "id":"1",
+      "prendaId": "1",
+      "clientesId": "1",
+      "cantidad": 1,
+      "total": 28000,
+      "estado": "enviado"
     },
     {
-      "id": "2",
-      "user": "salo",
-      "rol": "user",
-      "email": "salome@outlook.com",
-      "password": "123"
+      "id":"2",
+      "prendaId": "2",
+      "clientesId": "1",
+      "cantidad": 1,
+      "total": 28000,
+      "estado": "pagado"
     }
   ],
   "prendas": [
@@ -106,15 +117,7 @@
       "direccion": "carrera 32a #9b-48",
       "contraseña": "123456",
       "departamentop": "valle del cauca",
-      "ciudad": "cali",
-      "pedido": [
-        {
-          "prenda": 10,
-          "cantidad": 1,
-          "total": 28000,
-          "estado": "pagado"
-        }
-      ]
+      "ciudad": "cali"
     },
     {
       "id": "2",
@@ -126,27 +129,7 @@
       "direccion": "Calle 62AN #2N-68",
       "contraseña": "",
       "departamentop": "valle del cauca",
-      "ciudad": "cali",
-      "pedido": [
-        {
-          "prenda": 9,
-          "cantidad": 2,
-          "total": 70000,
-          "estado": "entregado"
-        },
-        {
-          "prenda": 13,
-          "cantidad": 1,
-          "total": 28000,
-          "estado": "entregado"
-        },
-        {
-          "prenda": 7,
-          "cantidad": 2,
-          "total": 56000,
-          "estado": "entregado"
-        }
-      ]
+      "ciudad": "cali"
     },
     {
       "id": "3",
@@ -158,15 +141,7 @@
       "direccion": "Cra 3N #14-47",
       "contraseña": "",
       "departamentop": "valle del cauca",
-      "ciudad": "yumbo",
-      "pedido": [
-        {
-          "prenda": 11,
-          "cantidad": 1,
-          "total": 28000,
-          "estado": "enviado"
-        }
-      ]
+      "ciudad": "yumbo"
     },
     {
       "nombres": "camilo",

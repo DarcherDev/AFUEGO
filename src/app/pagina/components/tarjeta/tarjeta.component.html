@@ -14,11 +14,14 @@
         </p>
     </mat-card-content>
     <mat-card-actions>
-        <button mat-button color="warn" [routerLink]="['/detalle',prenda.id]">
-            leer mas...
+        <button mat-button color="warn" [routerLink]="['/pagina/carrito']">
+            Añadir al carrito
         </button>
-        <button mat-button color="info" [routerLink]="['/prendas/editar',prenda.id]">
-            Editar
+        <!-- <button mat-button color="warn" [routerLink]="['/pagina',prenda.id]">
+            Ver Producto
+        </button> -->
+        <button mat-button color="info" [routerLink]="['/pagina',prenda.id]">
+            ver Producto
         </button>
     </mat-card-actions>
 </mat-card>
