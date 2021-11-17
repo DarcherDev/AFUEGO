@@ -20,16 +20,16 @@ const routes: Routes = [
         component: CarritoComponent,
       },
       {
-        path: ':id',
-        component: DetalleProductoComponent,
-      },
-      {
         path: 'buscar',
         component: BuscarComponent,
       },
       {
         path: 'registro',
         component: RegistroUsuarioComponent,
+      },
+      {
+        path: ':id',
+        component: DetalleProductoComponent,
       },
       {
         path: '**',
