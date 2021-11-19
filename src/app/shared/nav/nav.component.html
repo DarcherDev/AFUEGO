@@ -1,9 +1,10 @@
-<nav mat-tab-nav-bar >
+<!-- NO QUITAR EL MALDITO backgroundColor="primary" color="warn" >:V 
+      TE ESTOY VIENDO SALOME >:v -->
+<nav mat-tab-nav-bar backgroundColor="primary" color="warn">
     <a mat-tab-link [routerLink]="['pagina/home']" (click)="activeLink = 'pagina/Inicio'" [active]="activeLink == 'A'"> Inicio</a>
     <a mat-tab-link [routerLink]="['pagina/carrito']" (click)="activeLink = 'pagina/carrito'" [active]="activeLink == 'B'">Carrito</a>
-    <a mat-tab-link [routerLink]="['pagina/detalle']" (click)="activeLink = 'pagina/detalle'" [active]="activeLink == 'B'">detalle</a>
     <a mat-tab-link [routerLink]="['pagina/registro']" (click)="activeLink = 'pagina/registro'" [active]="activeLink == 'B'">registro</a>
-
+    <a mat-tab-link [routerLink]="['pagina/buscar']" (click)="activeLink = 'pagina/buscar'" [active]="activeLink == 'B'">buscar</a>
 </nav> 
 <router-outlet></router-outlet>
 

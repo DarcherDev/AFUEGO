@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { PrendaService } from '../../services/prenda.service';
-import { Prenda } from '../../interfaces/prenda.interface';
-import { switchMap }from 'rxjs/operators';
+import { ActivatedRoute, Router } from '@angular/router';
+import { switchMap } from 'rxjs/operators';
 
+import { Prenda } from '../../interfaces/prenda.interface';
+import { PrendaService } from '../../services/prenda.service';
 @Component({
   selector: 'app-detalle-producto',
   templateUrl: './detalle-producto.component.html',
@@ -11,16 +11,28 @@ import { switchMap }from 'rxjs/operators';
 })
 export class DetalleProductoComponent implements OnInit {
 
-  prendas!:Prenda;
+  prenda!: Prenda;
 
-  constructor(private ActivateRoute:ActivatedRoute,
-              private PrendaService:PrendaService) { }
+  private PrendaService: PrendaService;
+  private activatedRoute: ActivatedRoute;
+  private router: Router;
 
-  ngOnInit(): void {
-    this.ActivateRoute.params
-    .pipe(
-      switchMap(({id})=> this.PrendaService.getPrendaPorId(id))
-    )
+  constructor( activatedRoute: ActivatedRoute, PrendaService: PrendaService, router: Router) {
+    this.PrendaService = PrendaService;
+    this.activatedRoute = activatedRoute;
+    this.router = router;
+   }
+
+   ngOnInit(): void {
+    this.activatedRoute.params.pipe(
+      //metodo switchMap para utilizar el servicio de getPrendaPorId usando la desestruturacion
+      switchMap( ({ id }) => this.PrendaService.getPrendaPorId(id))
+      //me subscribo al servicio para obtener el prenda
+    ).subscribe( prenda => this.prenda = prenda)
+  }
+  
+  regresar(){
+    this.router.navigate(['/pagina/home'])
   }
 
 }

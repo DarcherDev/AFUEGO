@@ -1,21 +1,26 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
+import { Pedido } from '../../interfaces/pedido.interface';
+import { Prenda } from '../../interfaces/prenda.interface';
 
 @Component({
   selector: 'app-carrito',
   templateUrl: './carrito.component.html',
-  styles: [`
+  styleUrls: ['./carrito.component.css']
 
-  section{
-    margin: 30px;
-  }
-  
-  `]
 })
-export class CarritoComponent implements OnInit {
+export class CarritoComponent {
 
-  constructor() { }
+  @Input() pedido!: Pedido;
+  @Input() prenda!: Prenda;
+  prendas: Prenda[] = [];
 
-  ngOnInit(): void {
+  mas(){
+    this.pedido.cantidad = this.pedido.cantidad + 1;
+  }
+
+  menos(){
+    this.pedido.cantidad = this.pedido.cantidad - 1;
   }
 
 }
