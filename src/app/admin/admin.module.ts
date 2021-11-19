@@ -13,6 +13,7 @@ import { ProductoComponent } from '../admin/pages/producto/producto.component';
 import { TarjetaComponent } from '../admin/components/tarjeta/tarjeta.component';
 import { ImagenPipe } from '../admin/pipes/imagen.pipe';
 import { ConfirmarComponent } from '../admin/components/confirmar/confirmar.component';
+import { PedidosComponent } from './pages/pedidos/pedidos.component';
 
 
 
@@ -23,7 +24,8 @@ import { ConfirmarComponent } from '../admin/components/confirmar/confirmar.comp
     ProductoComponent,
     TarjetaComponent,
     ImagenPipe,
-    ConfirmarComponent
+    ConfirmarComponent,
+    PedidosComponent
   ],
   imports: [
     CommonModule,
