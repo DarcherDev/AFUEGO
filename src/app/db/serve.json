@@ -10,7 +10,7 @@
   ],
   "pedidos": [
     {
-      "id":"1",
+      "id": "1",
       "prendaId": "1",
       "clientesId": "1",
       "cantidad": 1,
@@ -18,7 +18,7 @@
       "estado": "enviado"
     },
     {
-      "id":"2",
+      "id": "2",
       "prendaId": "2",
       "clientesId": "1",
       "cantidad": 1,
@@ -31,7 +31,7 @@
       "id": "1",
       "nombre": "crop top blanco arco iris",
       "descripcion": "crop topp blanco con franja de arco iris",
-      "precio": 28000
+      "precio": "28000"
     },
     {
       "id": "2",
@@ -153,6 +153,17 @@
       "departamento": "valle del cauca",
       "cidudad": "cali",
       "id": "IxiswXa"
+    },
+    {
+      "nombres": "carlos",
+      "apellidos": "aristizabal",
+      "documentoIdentidad": "94376794",
+      "correo": "carlos_aristizabal@hotmail.com",
+      "celular": "3162436294",
+      "direccion": "carrera 1 # 1-2",
+      "departamento": "valle del cauca",
+      "cidudad": "cali",
+      "id": "Mu7w0sF"
     }
   ]
 }
