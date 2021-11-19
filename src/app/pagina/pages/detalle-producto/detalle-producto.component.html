@@ -1,8 +1,9 @@
-<section>
-<h1>Detalle</h1>
-<hr>
+<mat-grid-list cols="1" *ngIf="!prenda; else divPrenda">
+    <mat-grid-tile>
+        <mat-spinner></mat-spinner>
+    </mat-grid-tile>
+</mat-grid-list>
 
-    <ng-template #divPrenda>{{prendas | json}}</ng-template>
-    
-
-</section>
+<ng-template #divPrenda>
+    <app-informacion-prenda [prenda]="prenda"></app-informacion-prenda>
+</ng-template>

@@ -20,6 +20,7 @@ export class PrendaService {
   getSugerencias(termino: string): Observable<Prenda[]> {
     return this.http.get<Prenda[]>(`${this.url}/prendas?q=${termino}&_limit=5`);
   }
+  
   getPrenda(): Observable<Prenda[]> {
     return this.http.get<Prenda[]>(`${this.url}/prendas`);
   }

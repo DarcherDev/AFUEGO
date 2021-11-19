@@ -1,5 +1,40 @@
 <section>
 <h1>Carrito</h1>
 <hr>
-    <app-carrito-producto></app-carrito-producto>
+<div class="row" >
+    <div class="col">
+        <h2>Producto</h2>
+        <hr>
+        <br>
+            <ul>
+                <li>
+                    <!-- {{prenda.nombre}} -->
+                </li>
+            </ul>
+    </div>
+    <div class="col" >
+        <h2>Precio</h2>
+        <hr>
+        <br>
+        <ul>
+            <li>
+                <!-- {{prenda.precio}} -->
+            </li>
+        </ul>
+    </div>
+    <div class="col">
+        <h2>Cantidad</h2>
+        <hr>
+        <br>
+        <ul>
+            <li>
+                <button mat-raised-button (click)="mas()"> + </button>
+                <span> {{pedido.cantidad}}  </span>
+                <button mat-raised-button (click)="menos()"> - </button>
+            </li>
+        </ul>
+    </div>
+  
+    <button class="compra" mat-raised-button>Comprar</button>
+</div>
 </section>
